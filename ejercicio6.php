@@ -6,4 +6,10 @@ echo $edad."</br>";
 $edad = 40;
 
 echo $edad."</br>";
+
+//Constante 
+define("NOMBRE","OSCAR");
+
+echo NOMBRE;
+
 ?>
