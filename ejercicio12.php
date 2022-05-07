@@ -5,28 +5,16 @@
         $valorA=$_POST['valorA']; 
         $valorB=$_POST['valorB'];
         
-        $suma=$valorA+$valorB;
-        $resta=$valorA-$valorB;
-        $division=$valorA/$valorB;
-        $multiplicacion=$valorA*$valorB;
-
-        if ($valorA==$valorB){
-
-            echo "El valor de A es igual a el B";
-        }
-        if ($valorA==  4){
-        
-        echo "</br>"."El valor es 4";
-        }
-        if ($valorA==5){
+        if($valorA!=$valorB){
+            echo"El valor de A es diferente que el valor de B";
             
-            echo "El valor es 5";
+        }else{
+            echo"El valor de A es igual que el valor de B";
+
         }
-    
-        if (($valorA==4)&&($valorA==$valorB)){
-            echo "</br>"."El valor es el mismo valor de 4"; 
-        }
+       
     }
+
 ?>
 
 
@@ -39,7 +27,7 @@
     <title>Operadores Arimeticos</title>
 </head>
 <body>
-    <form action="ejercicio11.php" method="post">
+    <form action="ejercicio12.php" method="post">
         <h1>Valor A</h1>
         <input type="text" name="valorA" id="">
         <br>
